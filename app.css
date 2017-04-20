@@ -1155,7 +1155,7 @@ table {
 
 /**tablet styles**/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .main-header {
     position: static;
   }
@@ -1192,25 +1192,25 @@ table {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .scroll-up {
     display: none;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .partners {
     display: none;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .main-banner {
     display: none;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .category {
     width: 200px;
   }
