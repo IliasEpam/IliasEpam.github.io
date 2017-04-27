@@ -25,75 +25,51 @@
 			<img class="scroll-up__img" src="img/icons/scroll-up.png" alt="scroll-up">
 		</div>
 	</div>
-	<section class="main-banner">
-		<div class="main-banner__text-container">
-			<h1 class="main-banner__heading">Any exciting header</h1>
-			<p class="main-banner__text">Some attractive text, shouldn't be too large. Just a couple lines. Some attractive text, shouldn't be too large. Just a couple lines.</p>
-		</div>
-		<div class="main-banner__scroll-down">
-			<div class="main-banner__scroll-down-text">Start shopping</div>
-		</div>	
-	</section>
-	<main class="categories">
-		<div class="categories__grid">
-			<section class="categories__container">
-				<h2 class="categories__header">Categories</h2>
-				<div class="categories__item">
-					<a class="categories__link" href="dry food.html">
-						<img class="categories__img" src="img/dry.jpg" alt="Dry food"/>
-						<div class="categories__desc">Dry food<span> (80)</span></div>
-					</a>
-				</div>				
-				<div class="categories__item">
-					<a class="categories__link" href="dry food.html">
-						<img class="categories__img" src="img/wet.jpg" alt="Wet food"/>
-						<div class="categories__desc">Wet food<span> (50)</span></div>
-					</a>
-				</div>
-				<div class="categories__item">
-					<a class="categories__link" href="dry food.html">
-						<img class="categories__img" src="img/meds.jpg" alt="Medicines"/>
-						<div class="categories__desc">Medicines<span> (60)</span></div>
-					</a>
-				</div>			
-				<div class="categories__item">
-					<a class="categories__link" href="dry food.html">
-						<img class="categories__img" src="img/sleep.jpg" alt="Sleeping places"/>
-						<div class="categories__desc">Sleeping places<span> (35)</span></div>
-					</a>
-				</div>			
-				<div class="categories__item">
-					<a class="categories__link" href="dry food.html">
-						<img class="categories__img" src="img/toys.jpg" alt="Toys"/>
-						<div class="categories__desc">Toys<span> (77)</span></div>
-					</a>
-				</div>
-				<div class="categories__item">
-					<a class="categories__link" href="dry food.html">
-						<img class="categories__img" src="img/brush.jpg" alt="Brushes"/>
-						<div class="categories__desc">Brushes<span> (43)</span></div>
-					</a>
-				</div>				
-				<div class="categories__item">
-					<a class="categories__link" href="dry food.html">
-						<img class="categories__img" src="img/acs.jpg" alt="Accessories"/>
-						<div class="categories__desc">Accessories<span> (54)</span></div>
-					</a>
-				</div>				
-			</section>
-		</div>
-	</main>
-	<div class="partners">
-		<div class="partners__container">
-					<img class="partners__logo" alt="partner" src="img/partners/wwf.png">
-					<img class="partners__logo" alt="partner" src="img/partners/green.png">
-					<img class="partners__logo" alt="partner" src="img/partners/royal.png">
-					<img class="partners__logo" alt="partner" src="img/partners/wwf.png">
-		</div>
+	<div class="bread-crumbs">
+		<a class="bread-crumbs__item" href="#">Main page</a>
+		<a class="bread-crumbs__item" href="#">Category name</a>
+		<a class="bread-crumbs__item" href="#">Product name</a>
 	</div>
+	<div class="product">
+		<div class="slider">
+			<figure class="slider__shown-img-container">
+				<img class="slider__shown-img" src="img/logo.jpg" alt="1" id="big-img">
+			</figure>
+			<div class="slider__controls">
+				<div class="slider__arrow slider__arrow_left"></div>
+				<div class="slider__source">
+					<img class="slider__source-img slider__source-img_active" src="img/logo.jpg" alt="1">
+					<img class="slider__source-img" src="img/banner.jpg" alt="2">
+					<img class="slider__source-img" src="img/brush.jpg" alt="3">
+					<img class="slider__source-img" src="img/dry.jpg" alt="4">
+					<img class="slider__source-img" src="img/toys.jpg" alt="5">
+				</div>
+				<div class="slider__arrow slider__arrow_right"></div>
+			</div>
+		</div>
+		<section class="product__about">
+			<h1 class="product__name">Dry food: "Brand name" 2kg</h1>
+			<p class="product__desc">
+				Some product description like weight, brand, usefulness, some important properties and so on. You can put here even some marketing text. 
+				Anyway it is up to you what to write here. It doesn't matter cause it's just an example.
+			</p>
+			<div class="product__price">
+				Price: $5
+			</div>
+			<div class="product__inputs">
+				<label class="product__quantity">Quantity:<br> <input type="number" min="1" value="1"></label>
+				<button class="product__add-to-cart" type="submit"> Add to cart</button>
+			</div>
+			<div class="product__share">
+				<img class="product__social-icon" src="img/icons/facebook.png" alt="facebook">
+				<img class="product__social-icon" src="img/icons/twit.png" alt="twitter">
+				<img class="product__social-icon" src="img/icons/google.png" alt="google plus">
+			</div>
+		</section>
+	</div>	
 	<div class="modal-background">
 	</div>
-	<div class="modal-window" id="reg-window">
+		<div class="modal-window" id="reg-window">
 		<div class="modal-window__close">
 		</div>
 		<form class="modal-window__form">
