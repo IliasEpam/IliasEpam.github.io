@@ -767,11 +767,16 @@ table {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .goods__good {
   width: 200px;
-  height: 220px;
+  max-height: 220px;
+  padding-bottom: 20px;
   vertical-align: top;
   display: -webkit-box;
   display: -webkit-flex;
@@ -780,11 +785,12 @@ table {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-right: 20px;
 }
 
 .goods__good--list {
   width: 650px;
-  height: 240px;
+  max-height: 240px;
   font-size: 110%;
   text-align: left;
   -webkit-box-pack: justify;
@@ -792,6 +798,10 @@ table {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: auto;
+}
+
+.goods__good--dummy {
+  padding: 0;
 }
 
 .goods__good-img {
@@ -1759,21 +1769,9 @@ table {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .goods__content {
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-}
-
 @media screen and (max-width: 1024px) and (orientation: portrait) {
   .goods__navigation-categories {
     width: 100%;
-  }
-
-  .goods__header {
-    text-align: center;
   }
 
   .goods__content {
@@ -1782,7 +1780,7 @@ table {
 
   .goods__good--list {
     width: 80%;
-    height: 220px;
+    max-height: 220px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -1792,7 +1790,7 @@ table {
 
   .goods__good-img--list {
     width: 250px;
-    height: 200px;
+    max-height: 200px;
   }
 
   .goods__good-info--list {
@@ -1965,6 +1963,7 @@ table {
 
   .goods__header {
     font-size: 200%;
+    text-align: center;
   }
 
   .goods__content {
@@ -1984,7 +1983,7 @@ table {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
-    height: 160px;
+    max-height: 160px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -2044,7 +2043,7 @@ table {
 @media screen and (max-width: 420px) {
   .goods__good {
     width: 100%;
-    height: 120px;
+    max-height: 120px;
   }
 
   .goods__good-img {
