@@ -74,13 +74,13 @@
                 <a class="list-view list-view--visible" href="#" onclick="changeToListView()">List view</a>
                 <h1 class="goods__header"> Dry food</h1>
                 <div class="goods__good">
-                    <img class="goods__good-img" src="img/logo.jpg" alt="" />
+                    <img class="goods__good-img" src="img/dry.jpg" alt="" />
                     <div class="goods__good-info">
                         <div class="goods__good-name">
-                            <a class="goods__good-link" href="product.html">Dry food – "Brand" (2kg)</a>
+                            <a class="goods__good-link" href="product.html">Dry food – "Brand" (0.2kg)</a>
                         </div>
                         <div class="goods__good-price">
-                            5$
+                            0.9$
                         </div>
                         <p class="goods__good-description">
                             Little description of a good goes here. It could be much wider.
@@ -91,13 +91,13 @@
                     </div>
                 </div>
                 <div class="goods__good">
-                    <img class="goods__good-img" src="img/logo.jpg" alt="" />
+                    <img class="goods__good-img" src="img/wet.jpg" alt="" />
                     <div class="goods__good-info">
                         <div class="goods__good-name">
-                            <a class="goods__good-link" href="product.html">Dry food – "Brand" (2kg)</a>
+                            <a class="goods__good-link" href="product.html">Dry food – "Another Brand" (10kg)</a>
                         </div>
                         <div class="goods__good-price">
-                            5$
+                            10$
                         </div>
                         <p class="goods__good-description">
                             Little description of a good goes here. It could be much wider.
@@ -108,13 +108,13 @@
                     </div>
                 </div>
                 <div class="goods__good">
-                    <img class="goods__good-img" src="img/logo.jpg" alt="" />
+                    <img class="goods__good-img" src="img/banner.jpg" alt="" />
                     <div class="goods__good-info">
                         <div class="goods__good-name">
-                            <a class="goods__good-link" href="product.html">Dry food – "Brand" (2kg)</a>
+                            <a class="goods__good-link" href="product.html">Dry food – "Some Other Brand" (2kg)</a>
                         </div>
                         <div class="goods__good-price">
-                            5$
+                            4.5$
                         </div>
                         <p class="goods__good-description">
                             Little description of a good goes here. It could be much wider.
@@ -268,9 +268,9 @@
 
     </main>
     <div class="page__modal-window">
-        <div class="modal-window">
+        <div class="modal-window" onclick="controlModalWindow(event);">
             <div class="modal-window__pop-ups" id="reg-window">
-                <div class="modal-window__close" onclick="closeAllModalWindows();">
+                <div class="modal-window__close">
                 </div>
                 <form class="modal-window__form">
                     <div class="modal-window__line">
@@ -286,12 +286,12 @@
                         <button class="modal-window__button" type="submit">Register</button>
                     </div>
                     <div class="modal-window__line modal-window__line--text-right">
-                        <a href="#" class="modal-window__sign-link" onclick="swapModalWindow();">Sign In</a>
+                        <a href="#" class="modal-window__sign-link">Sign In</a>
                     </div>
                 </form>
             </div>
             <div class="modal-window__pop-ups" id="sign-window">
-                <div class="modal-window__close" onclick="closeAllModalWindows();">
+                <div class="modal-window__close">
                 </div>
                 <form class="modal-window__form">
                     <div class="modal-window__line">
@@ -310,7 +310,7 @@
                         <button class="modal-window__button" type="submit">Sign In</button>
                     </div>
                     <div class="modal-window__line modal-window__line--text-right">
-                        <a href="#" class="modal-window__reg-link" onclick="swapModalWindow();">Register</a>
+                        <a href="#" class="modal-window__reg-link">Register</a>
                     </div>
                 </form>
             </div>
