@@ -15,11 +15,6 @@
         }
     };
     /************modal windows functions**********/
-    function swapModalWindow() {
-        manipulateClasses('#reg-window', 'modal-window__pop-ups--visible', 'toggle');
-        manipulateClasses('#sign-window', 'modal-window__pop-ups--visible', 'toggle');
-    }
-
     function showModalWindow() {
         manipulateClasses('.modal-window', 'modal-window--visible', 'add');
         manipulateClasses('#sign-window', 'modal-window__pop-ups--visible', 'add');
@@ -29,6 +24,20 @@
         manipulateClasses('.modal-window', 'modal-window--visible', 'remove');
         manipulateClasses('#reg-window', 'modal-window__pop-ups--visible', 'remove');
         manipulateClasses('#sign-window', 'modal-window__pop-ups--visible', 'remove');
+    }
+
+    function swapModalWindow() {
+        manipulateClasses('#reg-window', 'modal-window__pop-ups--visible', 'toggle');
+        manipulateClasses('#sign-window', 'modal-window__pop-ups--visible', 'toggle');
+    }
+
+    function controlModalWindow(event) {
+        var eventTraget = event.target;
+        if (eventTraget.classList.contains('modal-window') || eventTraget.classList.contains('modal-window__close')) {
+            closeAllModalWindows();
+        } else if (eventTraget.classList.contains('modal-window__sign-link') || eventTraget.classList.contains('modal-window__reg-link')) {
+            swapModalWindow();
+        }
     }
     /**********swapping view of the goods in a category page*********/
     function changeToListView() {
